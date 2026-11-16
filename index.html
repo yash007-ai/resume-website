@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal resume website of a Class 12 student">
+  <title>Your Name | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header class="navbar" id="top">
+    <a href="#home" class="logo">YN.</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Switch dark or light theme">Dark mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Your Name</h1>
+        <p class="role">I am a <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+        <p class="intro">Class 12 student who loves building things with HTML, CSS and JavaScript. I am looking for chances to learn, build and grow.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">See my projects</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Quick facts">
+        <div class="avatar">YN</div>
+        <ul class="facts">
+          <li><strong>School:</strong> Your School Name</li>
+          <li><strong>Class:</strong> 12th (Science / Commerce / Arts)</li>
+          <li><strong>City:</strong> Aligarh, Uttar Pradesh</li>
+          <li><strong>Goal:</strong> B.Tech in Computer Science</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <p>I am a curious and hard-working student. I started learning web development this year and enjoy turning an idea into a real page that anyone can open in a browser.</p>
+        <p>Outside studies I like cricket, reading and solving puzzles. I enjoy working in teams and I always try to finish what I start.</p>
+        <div class="counters">
+          <div class="counter"><span class="count" data-target="3">0</span><small>Projects built</small></div>
+          <div class="counter"><span class="count" data-target="4">0</span><small>Languages learned</small></div>
+          <div class="counter"><span class="count" data-target="12">0</span><small>Class studying</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section alt" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <article class="time-item">
+          <h3>Class 12 (Senior Secondary)</h3>
+          <p class="meta">Your School Name, 2025 – 2026</p>
+          <p>Subjects: Physics, Chemistry, Maths, Computer Science. Expected percentage: XX%.</p>
+        </article>
+        <article class="time-item">
+          <h3>Class 10 (Secondary)</h3>
+          <p class="meta">Your School Name, 2023 – 2024</p>
+          <p>Scored XX%. Got a school certificate for good attendance.</p>
+        </article>
+        <article class="time-item">
+          <h3>Web Development Course</h3>
+          <p class="meta">HTML, CSS and JavaScript modules</p>
+          <p>Learned page structure, styling, layouts and basic interactivity.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head"><span>HTML</span><span>90%</span></div>
+          <div class="bar"><div class="fill" data-level="90"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>CSS</span><span>80%</span></div>
+          <div class="bar"><div class="fill" data-level="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>JavaScript</span><span>65%</span></div>
+          <div class="bar"><div class="fill" data-level="65"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Java</span><span>60%</span></div>
+          <div class="bar"><div class="fill" data-level="60"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Git and GitHub</span><span>55%</span></div>
+          <div class="bar"><div class="fill" data-level="55"></div></div>
+        </div>
+      </div>
+      <ul class="chips">
+        <li>Teamwork</li><li>Problem solving</li><li>Time management</li><li>Communication</li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section alt" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="java">Java</button>
+      </div>
+      <div class="cards">
+        <article class="card" data-type="web">
+          <h3>Resume Website</h3>
+          <p>This site. Built with HTML for structure, CSS for design and JavaScript for interaction.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+        </article>
+        <article class="card" data-type="web">
+          <h3>Simple Calculator</h3>
+          <p>A calculator that adds, subtracts, multiplies and divides, with a clean button layout.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+        </article>
+        <article class="card" data-type="java">
+          <h3>Student Marks Manager</h3>
+          <p>A console program that stores marks of students and prints the grade and average.</p>
+          <p class="tags">Java</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Want to talk about a project or an opportunity? Send me a message.</p>
+          <ul>
+            <li><strong>Email:</strong> yourname@example.com</li>
+            <li><strong>Phone:</strong> +91 98765 43210</li>
+            <li><strong>GitHub:</strong> github.com/your-username</li>
+          </ul>
+        </div>
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+          <p id="formMsg" class="form-msg" role="status"></p>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
